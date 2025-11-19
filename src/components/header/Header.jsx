@@ -65,14 +65,14 @@ const HeaderNav = () =>{
                 const buttonClasses = `${styles.navButton} ${isActive ? styles.active : ''}`;
                 
                 return (
-                    // 3. Envolve o botão com Link para permitir a navegação
-                    <Link href={item.href} key={item.label} passHref legacyBehavior>
-                        {/* 4. Passa as classes calculadas para o componente Button */}
-                        <Button className={buttonClasses}>
-                            {item.label}
-                        </Button>
+                    <Link 
+                        href={item.href} 
+                        key={item.label} 
+                        className={buttonClasses} 
+                    >
+                        {item.label}
                     </Link>
-                );
+);
             })}
         </div>
     )
