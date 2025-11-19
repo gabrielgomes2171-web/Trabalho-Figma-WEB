@@ -1,16 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const CardVendedor = ({vendedorData}) =>{
     const {nome, local, nota, avaliacoes, produtos, seguidores, fundada, minPedido, 
-        especialidades, qualidades,image, premium, id} = vendedorData;
+        especialidades, qualidades, imagem, premium, id} = vendedorData;
     return ( 
     <div className="card-vendedor">
         {premium && <span className="premium-tag">Qualidade Premium</span>}
 
         <div className="card-image"> 
-            < img src={image || '/placeholder.webp'}
-                  alt={'Loja ${nome}'}
-                  className="card-image" />
+            <span><Image src={vendedorData.imagem} alt={vendedorData.nome} width={250} height={140} /></span>
         </div>
 
         <div className="card-content">

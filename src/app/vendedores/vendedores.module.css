@@ -1,0 +1,12 @@
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+};
+
+.cardVendedor {
+    border: 5px solid #595959;
+    border-radius: 8px;
+
+}
