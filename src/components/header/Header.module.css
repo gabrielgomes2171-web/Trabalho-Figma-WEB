@@ -1,0 +1,145 @@
+/* CONTAINER PRINCIPAL */
+.header-container {
+    width: 100%;
+    box-sizing: border-box; 
+    margin-bottom: 0;
+}
+
+/* 1. BARRA SUPERIOR (header-top-bar) */
+.header-top-bar {
+    background: linear-gradient(to right, #2563EB, #9233EA); 
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-top-bar span {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* 2. BARRA PRINCIPAL (header-main-bar) */
+.header-main-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* ESTILO DO LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px; 
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8e2de2; 
+    margin: 0;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #666;
+    margin: -3px 0 0 0;
+}
+
+/* ESTILO DA BARRA DE PESQUISA */
+.barra-pesquisa {
+    flex-grow: 1; 
+    max-width: 600px;
+    margin: 0 40px; 
+    position: relative;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 5px; 
+    font-size: 16px;
+    outline: none; 
+    /* Garante que o texto digitado não seja a cor do placeholder */
+    color: #333;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #aaa; 
+    opacity: 1; 
+    font-size: 16px; 
+}
+
+/* AGRUPAMENTO DE BOTÕES (Carrinho e Entrar) */
+.Buttons-direita {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+/* ESTILO DO BOTÃO CARRINHO */
+.Buttons-direita > button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* CONTADOR DE ITENS NO CARRINHO */
+.cartCount {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    padding: 2px 5px;
+    line-height: 1;
+}
+
+/* ESTILO DO BOTÃO 'ENTRAR' */
+.enterButton { 
+    background: linear-gradient(to right, #8e2de2, #4a00e0) !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 3. BARRA DE NAVEGAÇÃO (header-main-nav) */
+.header-main-nav {
+    display: flex;
+    gap: 30px; 
+    padding: 10px 20px;
+    border-top: 1px solid #eee; 
+}
+
+/* ESTILO GERAL DOS BOTÕES DE NAVEGAÇÃO */
+.navButton {
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    background: none; 
+    border: none;
+    cursor: pointer;
+}
+
+/* ESTILO DO BOTÃO "Início" ATIVO */
+.active { 
+    background-color: #e0f7fa; 
+    border-radius: 5px;
+    color: #007bff;
+    padding: 10px 10px; 
+    font-weight: bold;
+}

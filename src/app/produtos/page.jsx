@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 
 export default function ProdutosPage(){
     return (
