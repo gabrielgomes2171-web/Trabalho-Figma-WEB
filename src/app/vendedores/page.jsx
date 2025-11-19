@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import Header from "@/components/header/Header";
 import CardVendedor from "@/components/CardVendedor";
 import { vendedoresData } from "../data/vendedores";
