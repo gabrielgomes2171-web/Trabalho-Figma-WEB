@@ -16,6 +16,26 @@
 
 }
 
+.cardContent {
+    
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vendedorStatus {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 10px; 
+}
+
+.statusLine {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px;
+}
+
 .premiumTag {
     position: absolute;
     top: 10px;

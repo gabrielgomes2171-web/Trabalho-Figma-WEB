@@ -13,21 +13,25 @@ const CardVendedor = ({vendedorData}) =>{
                 {premium && <span className={styles.premiumTag}>Qualidade Premium</span>}
         </div>
 
-        <div className="card-content">
+        <div className={styles.cardContent}>
             <h3 className="vendedor-name">{nome}</h3>
             <p className="vendedor-local">{local}</p>
-            <div className="vendedor-status">
-                <div className="status-itens">
-                    <span className="rating">⭐</span>
-                    <span className="status-valor">{nota}({avaliacoes})</span>
+            <div className={styles.vendedorStatus}>
+                <div className={styles.statusLine}>
+                    <span><Image src="/images/star.png" alt="box" width={18} height={18}/>{nota}({avaliacoes})</span>
+                    <span><Image src="/images/box-open-full.png" alt="box" width={18} height={18}/>{produtos} produtos</span>                    
+                    <span><Image src="/images/user.png" alt="user" width={18} height={18}/>{seguidores} seguidores</span>                  
                 </div>
-            </div>       
+            </div>  
+            <div className={styles.vendedorTags}>
+                {especialidades.map(tag =>(
+                    <span key={tag} className={styles.especialidadeTag}>{tag}</span>
+                ))}
+            </div>
+            
+                 
         </div>
-        <div className={styles.vendedorTags}>
-            {especialidades.map(tag =>(
-                <span key={tag} className={styles.especialidadeTag}>{tag}</span>
-            ))}
-        </div>
+            
         <div className={styles.botoesAcao}>
             <Link href={'/loja/${id}'} className={styles.botaoVerLoja}>Ver Loja</Link>
             <button className={styles.botaoSeguir}>Seguir</button>
