@@ -1,0 +1,81 @@
+.cardVendedor { 
+    position: relative;     
+    border: 1px solid #e0e0e0; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
+    background-color: #ffffff; 
+    overflow: hidden;
+}
+
+.cardImage {
+    
+    width: 100%;
+    height: 180px; 
+    position: relative; 
+    overflow: hidden; 
+
+}
+
+.premiumTag {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #f7d04f;
+    color: rgb(9, 9, 9);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.vendedorTags {
+    display: flex; 
+    flex-wrap: wrap; 
+    padding-bottom: 10px; 
+    gap: 8px;     
+    margin-top: 10px; 
+}
+
+.especialidadeTag {
+    display: inline-flex; 
+    background-color: rgba(198, 220, 250, 0.639);
+    color: rgb(114, 136, 226); 
+    padding: 4px 10px;     
+    border-radius: 16px; 
+    font-size: 0.75rem; 
+    white-space: nowrap; 
+}
+
+.botoesAcao {
+    display: flex; 
+    align-items: stretch;
+    gap: 10px;     
+    margin-top: 15px; 
+}
+
+.botaoVerLoja { 
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;              
+    background-color: #5d53c6; 
+    color: white; 
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.botaoSeguir {
+    flex: 1;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;   
+    background-color: transparent;
+    color: #4a4a4a;
+    border: 1px solid #ccc; 
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}

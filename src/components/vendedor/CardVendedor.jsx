@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./CardVendedor.module.css";
 
 const CardVendedor = ({vendedorData}) =>{
     const {nome, local, nota, avaliacoes, produtos, seguidores, fundada, minPedido, 
         especialidades, qualidades, imagem, premium, id} = vendedorData;
     return ( 
-    <div className="card-vendedor">
-        {premium && <span className="premium-tag">Qualidade Premium</span>}
-
-        <div className="card-image"> 
-            <span><Image src={vendedorData.imagem} alt={vendedorData.nome} width={250} height={140} /></span>
+    <div className={styles.cardVendedor}>
+       
+        <div className={styles.cardImage}> 
+            <Image src={vendedorData.imagem} alt={vendedorData.nome} width={450} height={240} className={styles.cardImage}/>
+                {premium && <span className={styles.premiumTag}>Qualidade Premium</span>}
         </div>
 
         <div className="card-content">
@@ -22,14 +23,14 @@ const CardVendedor = ({vendedorData}) =>{
                 </div>
             </div>       
         </div>
-        <div className="vendedor-tags">
+        <div className={styles.vendedorTags}>
             {especialidades.map(tag =>(
-                <span key={tag} className="especialidade-tag">{tag}</span>
+                <span key={tag} className={styles.especialidadeTag}>{tag}</span>
             ))}
         </div>
-        <div className="card-acao">
-            <Link href={'/loja/${id}'} className="botao-ver-loja">Ver Loja</Link>
-            <button className="botao-seguir">Seguir</button>
+        <div className={styles.botoesAcao}>
+            <Link href={'/loja/${id}'} className={styles.botaoVerLoja}>Ver Loja</Link>
+            <button className={styles.botaoSeguir}>Seguir</button>
         </div>
         
 
