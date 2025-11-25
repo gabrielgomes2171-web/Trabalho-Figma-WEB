@@ -1,7 +1,5 @@
-src/components/LoginScreen.jsx
-
 import React from 'react';
-import './styles.css';
+import styles from "./components/login/styles.module.css";
 
 function LoginScreen({ onSwitchToRegister }) {
   return (

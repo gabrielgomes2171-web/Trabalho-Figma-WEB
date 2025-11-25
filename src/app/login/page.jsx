@@ -1,9 +1,8 @@
-src/App.jsx
+"use client";
+import LoginScreen from '@/components/login/LoginScreen';
+import RegisterScreen from '@/components/registro/RegisterScreen';
 
-import React, { useState } from 'react';
-import LoginScreen from './components/LoginScreen';
-import RegisterScreen from './components/RegisterScreen';
-import './components/styles.css';
+import { useState } from 'react';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState('login'); 

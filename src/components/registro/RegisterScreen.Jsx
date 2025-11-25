@@ -1,7 +1,5 @@
-src/components/RegisterScreen.jsx
-
 import React from 'react';
-import './styles.css';
+import styles from "./components/registro/styles.module.css";
 
 function RegisterScreen({ onSwitchToLogin }) {
   return (

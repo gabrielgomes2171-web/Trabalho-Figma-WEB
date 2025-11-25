@@ -1,0 +1,67 @@
+.card-principal {
+    width: 300px;
+    padding: 20px;
+    background-color: #3A2A6E; /* Cor roxa */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto; 
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.logo-c {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #5B4887;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.nome-hub {
+    font-size: 16px;
+    font-weight: 500;
+}
+.input-padrao {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.botao-entrar {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5722; /* Cor Laranja */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.link-criar-conta, .link-ja-registrado {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.link-ja-registrado {
+    color: #FF5722;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+.title-register {
+    color: white;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}

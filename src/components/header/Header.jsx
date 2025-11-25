@@ -43,7 +43,9 @@ const HeaderMain = () => {
                     <Image src="/images/shopping-cart.svg" alt="carrinho de compras" width={25} height={25}/>
                     <span className={styles.cartCount}>0</span>
                 </Button>
+                <Link href="/login">
                 <Button className={styles.enterButton}>Entrar</Button>
+                </Link>
             </div>
         </div>
     )
