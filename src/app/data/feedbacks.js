@@ -1,4 +1,4 @@
-export const feedbackData = [
+export const feedbackdata = [
  
   {
     id: 1,
