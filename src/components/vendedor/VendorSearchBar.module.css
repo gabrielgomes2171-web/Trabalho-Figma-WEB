@@ -1,0 +1,82 @@
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos */
+    
+    /* Estilos do card branco flutuante */
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 30px;
+    max-width: 90%; /* Limita a largura se necessário, ou remova se o pai já limitar */
+}
+
+/* 2. CAMPO DE BUSCA (INPUT): Ocupa o espaço restante */
+.searchInput {
+    flex: 1; /* <-- ESSENCIAL: Faz o input e seu container ocuparem todo o espaço restante */
+    display: flex; /* Para alinhar a lupa se ela for adicionada */
+}
+
+.searchInput input {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    outline: none;
+}
+
+.filterControls {
+    display: flex; /* <-- ESSENCIAL: Alinha Dropdown, Contador e Toggles */
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os itens secundários */
+    flex-shrink: 0; /* Impede que os filtros encolham quando a tela for pequena */
+}
+
+/* 3. DROPDOWN E CONTADOR: Mantêm seu tamanho fixo */
+.filtroDropdown {
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    outline: none;
+    flex-shrink: 0; /* Impede que encolha */
+    width: 120px; /* Largura fixa */
+}
+
+.vendorQuantidade {
+    margin: 0; 
+    font-size: 0.95rem;
+    color: #777;
+    flex-shrink: 0; /* Impede que encolha */
+    white-space: nowrap; /* Garante que o texto não quebre */
+}
+
+/* 4. TOGGLES DE VISUALIZAÇÃO: Botões de Grid/Lista */
+.viewToggles {
+    display: flex;
+    gap: 0px; 
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2px;
+    flex-shrink: 0; /* Impede que encolha */
+}
+
+.toggleButton {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+/* 5. ESTADO ATIVO */
+.activeView {
+    background-color: #e0e0e0; /* Cor de fundo para o botão selecionado (Cinza claro) */
+}
