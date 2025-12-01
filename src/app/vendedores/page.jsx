@@ -1,4 +1,4 @@
-import Header from "@/components/header/Header";
+import Header from "src/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Button from "@components/Button";
 import CardVendedor from "@/components/vendedor/CardVendedor";

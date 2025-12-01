@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import Header from "@/components/header/Header";
+import Header from "src/components/header/Header";
 import styles from "./produtos.module.css";
 import Footer from "@/components/footer/Footer";
 
