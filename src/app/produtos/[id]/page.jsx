@@ -1,66 +1,58 @@
 "use client";
+
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function ProdutoPage({ params }) {
-const { id } = params;
-const [produto, setProduto] = useState(null);
-const [loading, setLoading] = useState(true);
+export default function ProdutosPage() {
+  const [produtos, setProdutos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-useEffect(() => {
-async function fetchProduto() {
-try {
-// EXEMPLO: ajuste para sua API
-const res = await fetch(`/api/produtos/${id}`);
-const data = await res.json();
-setProduto(data);
-} catch (error) {
-console.error("Erro ao carregar produto:", error);
-} finally {
-setLoading(false);
-}
-}
-fetchProduto();
-}, [id]);
+  useEffect(() => {
+    async function fetchProdutos() {
+      // Você pode trocar pela sua API futuramente
+      const res = await fetch("/api/produtos");
+      const data = await res.json();
+      setProdutos(data);
+      setLoading(false);
+    }
 
-if (loading) return <p>Carregando...</p>;
-if (!produto) return <p>Produto não encontrado.</p>;
+    fetchProdutos();
+  }, []);
 
-return (
-<main style={{ padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
-<div style={{ display: "flex", gap: "2rem" }}>
-<img
-src={produto.image}
-alt={produto.nome}
-style={{ width: "350px", borderRadius: "8px" }}
-/>
+  if (loading) return <p>Carregando...</p>;
 
-```
-    <div>
-      <h1>{produto.nome}</h1>
-      <p style={{ fontSize: "1.2rem", margin: "1rem 0" }}>
-        {produto.descricao}
-      </p>
-      <strong style={{ fontSize: "1.8rem" }}>
-        R$ {produto.preco}
-      </strong>
+  return (
+    <div style={{ padding: "40px" }}>
+      <h1>Lista de Produtos</h1>
 
-      <button 
-        style={{
-          marginTop: "1.5rem",
-          padding: "1rem 2rem",
-          backgroundColor: "#111",
-          color: "#fff",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-          fontSize: "1rem"
-        }}
-      >
-        Comprar
-      </button>
+      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+        {produtos.map((produto) => (
+          <div 
+            key={produto.id}
+            style={{
+              border: "1px solid #ccc",
+              padding: "20px",
+              width: "250px",
+              borderRadius: "10px"
+            }}
+          >
+            <img 
+              src={produto.imageUrl} 
+              alt={produto.title} 
+              width="200" 
+              height="200"
+            />
+
+            <h3>{produto.title}</h3>
+            <p>Preço: R$ {produto.price}</p>
+
+            {/* AQUI você redireciona para a página de detalhes */}
+            <Link href={`/produtos/${produto.id}`}>
+              Ver detalhes
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-</main>
-
-);
+  );
 }
