@@ -1,10 +1,10 @@
 import Header from "src/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Button from "@components/Button";
-import ContactCard from "./ContactCard";
-import "./ContactSection.css";
+import ContatoCard from "./ContatoCard";
+import "./ContatoSection.css";
 
-const ContactSection = () => {
+const ContatoSection = () => {
   return (
     <section className="contato-section">
       <h2>Entre em Contato</h2>
@@ -14,28 +14,28 @@ const ContactSection = () => {
       </p>
 
       <div className="cards">
-        <ContactCard 
+        <ContatoCard 
           icon="📞"
           title="Telefone"
           text="(87) 3000-0000"
           detail="Seg à Sex: 8h às 18h"
         />
 
-        <ContactCard 
+        <ContatoCard 
           icon="📧"
           title="E-mail"
           text="contato@caruarutexilhub.com.br"
           detail="Resposta em até 2 horas"
         />
 
-        <ContactCard 
+        <ContatoCard 
           icon="📍"
           title="Endereço"
           text="Centro de Caruaru, PE"
           detail="Polo Têxtil do Nordeste"
         />
 
-        <ContactCard 
+        <ContatoCard 
           icon="⏰"
           title="Horário"
           text="Seg à Sex: 8h às 18h"
@@ -46,5 +46,5 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContatoSection;
 
