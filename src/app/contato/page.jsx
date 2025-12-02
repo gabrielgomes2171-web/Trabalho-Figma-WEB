@@ -1,39 +1,50 @@
-import Footer from "@/components/footer/Footer";
 import Header from "src/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import Button from "@components/Button";
+import ContactCard from "./ContactCard";
+import "./ContactSection.css";
 
-export default function ContatoPage() {
+const ContactSection = () => {
   return (
-    <main>
-      <Header />
-
-      <h1>Sobre o Caruaru Têxtil Hub</h1>
-
-      <p>
-        Transformando a tradicional Feira da Sulanca em um marketplace digital
-        moderno,
+    <section className="contato-section">
+      <h2>Entre em Contato</h2>
+      <p className="subtitulo">
+        Estamos aqui para ajudar! Entre em contato conosco e descubra como 
+        podemos impulsionar seu negócio têxtil.
       </p>
-      <p>conectando a rica tradição têxtil de Caruaru com todo o Brasil.</p>
-      <div>
-        <div>
-          <h2>5.000+</h2>
-          <p>Vendedores Cadastrados</p>
-        </div>
 
-        <div>
-          <h2>50.000+</h2>
-          <p>Produtos Disponíveis</p>
-        </div>
+      <div className="cards">
+        <ContactCard 
+          icon="📞"
+          title="Telefone"
+          text="(87) 3000-0000"
+          detail="Seg à Sex: 8h às 18h"
+        />
 
-        <div>
-          <h2>R$ 2M+</h2>
-          <p>Vendas Mensais</p>
-        </div>
-        <div>
-          <h2>26</h2>
-          <p>Estados Atendidos</p>
-        </div>
+        <ContactCard 
+          icon="📧"
+          title="E-mail"
+          text="contato@caruarutexilhub.com.br"
+          detail="Resposta em até 2 horas"
+        />
+
+        <ContactCard 
+          icon="📍"
+          title="Endereço"
+          text="Centro de Caruaru, PE"
+          detail="Polo Têxtil do Nordeste"
+        />
+
+        <ContactCard 
+          icon="⏰"
+          title="Horário"
+          text="Seg à Sex: 8h às 18h"
+          detail="Sábado: 8h às 14h"
+        />
       </div>
-      <Footer />
-    </main>
+    </section>
   );
-}
+};
+
+export default ContactSection;
+
