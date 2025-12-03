@@ -1,7 +1,8 @@
 import Footer from "src/components/footer/Footer";
 import Header from "src/components/header/Header";
+import TestimonialGroupCards from "./TestimonialGroupCards";
 
-export default function ContatoPage() {
+export default function SobrePage() {
   return (
     <main>
       <Header />
@@ -45,6 +46,7 @@ export default function ContatoPage() {
         <p>brasileiro</p>
       </div>
 
+      <TestimonialGroupCards />
       <Footer />
     </main>
   );
