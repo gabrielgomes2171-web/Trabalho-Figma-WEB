@@ -4,7 +4,7 @@ import styles from "./CardVendedor.module.css";
 
 const CardVendedor = ({vendedorData}) =>{
     const {nome, local, nota, avaliacoes, produtos, seguidores, descricao, fundada, minPedido, 
-        especialidades, qualidades, imagem, premium, id} = vendedorData;
+        especialidades, qualidades, imagem, premium, slug} = vendedorData;
     return ( 
     <div className={styles.cardVendedor}>
        
@@ -49,25 +49,17 @@ const CardVendedor = ({vendedorData}) =>{
                     <span key={tag} className={styles.qualidadesTag}>{tag}</span>
                 ))}
             </div>
-
-
             
         </div>
             
         <div className={styles.botoesAcao}>
-            <Link href={'/loja/${id}'} className={styles.botaoVerLoja}>Ver Loja</Link>
+            <Link href={`/lojas/${slug}`} className={styles.botaoVerLoja}>Ver Loja</Link>
             <button className={styles.botaoSeguir}>Seguir</button>
-        </div>
-        
+        </div>       
 
-     </div>   
+     </div>
 
-
-
-
-    );
-
-       
+    );       
 
 };
 

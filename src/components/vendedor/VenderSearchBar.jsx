@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image";
-import Button from "@components/Button";
+import Button from "src/components/Button";
 import styles from "./VendorSearchBar.module.css"
 
 export default function VenderSearchBar() {

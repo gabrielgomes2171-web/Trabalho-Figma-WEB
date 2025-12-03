@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import Header from "@components/header/Header"; 
-import LoginScreen from '@components/login/LoginScreen';
-import RegisterScreen from '@components/registro/RegisterScreen';
+import Header from "src/components/header/Header"; 
+import LoginScreen from 'src/components/login/LoginScreen';
+import RegisterScreen from 'src/components/registro/RegisterScreen';
 
 function LoginPage() {
   const [currentScreen, setCurrentScreen] = useState('login'); 

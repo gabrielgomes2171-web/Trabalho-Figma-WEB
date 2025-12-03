@@ -1,7 +1,7 @@
-import Button from "@/components/Button";
+import Button from "src/components/Button";
 import Header from "src/components/header/Header";
 import styles from "./produtos.module.css";
-import Footer from "@/components/footer/Footer";
+import Footer from "src/components/footer/Footer";
 
 function ProductCard({ title, price, oldPrice, imageUrl, discount }) {
     return (
