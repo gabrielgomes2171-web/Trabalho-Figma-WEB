@@ -1,0 +1,28 @@
+.wrapper { max-width: 1100px; margin: 24px auto; padding: 0 20px; }
+.top { display: flex; gap: 28px; align-items: flex-start; }
+.details { width: 420px; }
+.title { font-size: 22px; margin-bottom: 8px; }
+.priceBox { display:flex; align-items:center; gap:12px; margin: 10px 0; }
+.price { font-size: 22px; color: #0b4fff; font-weight:700; }
+.oldPrice { text-decoration: line-through; color:#999; }
+.discountTag { background:#ffeef0; color:#d0003b; padding:4px 8px; border-radius:6px; font-weight:700; }
+.vendor { display:flex; justify-content:space-between; align-items:center; margin:12px 0; }
+.storeBtn { padding:6px 12px; border-radius:6px; background:#f5f7fb; border:1px solid #e6e9ef; }
+.variations { margin-top:12px; display:flex; flex-direction:column; gap:12px; }
+.group label { font-size:13px; color:#333; display:block; margin-bottom:6px; }
+.options { display:flex; gap:8px; flex-wrap:wrap; }
+.option { padding:8px 10px; border-radius:8px; border:1px solid #e6e9ef; background:#fff; cursor:pointer; }
+.optionActive { padding:8px 10px; border-radius:8px; background:#0b4fff; color:#fff; border:1px solid #0b4fff; }
+.qty { margin-top:6px; }
+.qty button { padding:6px 10px; border-radius:6px; border:1px solid #e6e9ef; background:#fff; cursor:pointer; }
+.qtyVal { padding:0 10px; display:inline-block; }
+.actions { display:flex; gap:10px; margin-top:16px; }
+.buy { background:#0b4fff; color:#fff; padding:12px 18px; border-radius:8px; border: none; cursor:pointer; }
+.cart { background:#fff; color:#0b4fff; padding:10px 14px; border-radius:8px; border:1px solid #0b4fff; cursor:pointer; }
+.badges { display:flex; gap:12px; margin-top:14px; color:#4a5568; font-size:13px; }
+.tabs { margin-top:40px; }
+.tabNav { display:flex; gap:12px; border-bottom:1px solid #eee; padding-bottom:8px; }
+.tabNav button { background:transparent; border:none; padding:8px 10px; cursor:pointer; }
+.activeTab { border-bottom:3px solid #0b4fff; font-weight:700; }
+.tabContent { padding:18px; background:#fff; border:1px solid #eef2f7; border-radius:8px; margin-top:12px; }
+.loading, .notfound { padding:40px; text-align:center; color:#666; }

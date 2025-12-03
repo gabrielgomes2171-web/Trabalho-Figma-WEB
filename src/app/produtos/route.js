@@ -1,7 +1,5 @@
-export async function GET(req, { params }) {
-  const id = Number(params.id);
+export async function GET() {
   const produtos = [
-    // mesmo array do route.js acima (ou importe)
     {
       id: 1,
       title: "Calça Jeans Masculina",
@@ -17,7 +15,7 @@ export async function GET(req, { params }) {
       ],
       sizes: ["38","40","42","44"],
       colors: ["Azul Escuro","Azul Claro","Preto"],
-      descriptionHtml: "<p>Calça jeans premium, acabamento impecável. Ideal para o dia a dia.</p>",
+      descriptionHtml: "<p>Calça jeans premium, acabamento impecável...</p>",
       specs: ["100% algodão","Lavagem stone wash","Costura reforçada"],
       related: [
         { id: 2, title: "Bermuda Jeans Masculina", price: 42.0, imageUrl: "/assets/produto2.png" },
@@ -25,7 +23,5 @@ export async function GET(req, { params }) {
       ]
     }
   ];
-
-  const produto = produtos.find((p) => p.id === id) || null;
-  return new Response(JSON.stringify(produto), { status: 200 });
+  return new Response(JSON.stringify(produtos), { status: 200 });
 }
