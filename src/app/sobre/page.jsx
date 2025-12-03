@@ -1,5 +1,6 @@
 import Footer from "src/components/footer/Footer";
 import Header from "src/components/header/Header";
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 export default function SobrePage(){
@@ -30,6 +31,14 @@ export default function ContatoPage() {
       <p>conectando a rica tradição têxtil de Caruaru com todo o Brasil.</p>
       <div>
 =======
+=======
+import TestimonialGroupCards from "./TestimonialGroupCards";
+
+export default function SobrePage() {
+  return (
+    <main>
+      <Header />
+>>>>>>> 156be887a95d3d6506c6523a7e4115b20d673beb
       <div className={introductionSobre}>
         <h1>Sobre o Caruaru Têxtil Hub</h1>
 
@@ -41,7 +50,10 @@ export default function ContatoPage() {
       </div>
 
       <div className={styles.sobre}>
+<<<<<<< HEAD
 >>>>>>> c9ef344282925f9159586b9f1988298307652213
+=======
+>>>>>>> 156be887a95d3d6506c6523a7e4115b20d673beb
         <div>
           <h2>5.000+</h2>
           <p>Vendedores Cadastrados</p>
@@ -62,11 +74,14 @@ export default function ContatoPage() {
         </div>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Footer />
     </main>
   );
 }
 =======
+=======
+>>>>>>> 156be887a95d3d6506c6523a7e4115b20d673beb
 
       <div className={princinpioSobre}>
         <h2>Nossos Princípios</h2>
@@ -77,8 +92,15 @@ export default function ContatoPage() {
         <p>brasileiro</p>
       </div>
 
+<<<<<<< HEAD
+=======
+      <TestimonialGroupCards />
+>>>>>>> 156be887a95d3d6506c6523a7e4115b20d673beb
       <Footer />
     </main>
   );
 }
+<<<<<<< HEAD
 >>>>>>> c9ef344282925f9159586b9f1988298307652213
+=======
+>>>>>>> 156be887a95d3d6506c6523a7e4115b20d673beb
