@@ -1,6 +1,7 @@
 import Button from "src/components/Button";
 import Header from "src/components/header/Header";
 import styles from "./produtos.module.css";
+
 function ProductCard({ id, title, price, oldPrice, imageUrl, discount }) {
     return (
         <div className={styles['product-card']}>
