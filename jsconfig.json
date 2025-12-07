@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // ESTA LINHA É O SEGREDO: Ela mapeia "src/..." para a pasta real "./src/..."
+      "src/*": ["./src/*"], 
+      // Se você também tiver o alias @, mantenha-o (é uma boa prática)
+      "@/*": ["./src/*"] 
+    }
+  }
+}
