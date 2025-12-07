@@ -1,0 +1,28 @@
+.sobre {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* alinha no eixo vertical */
+  gap: 40px; /* espaço entre os itens */
+  text-align: center; /* centraliza o texto dentro dos itens */
+  margin: 40px 0;
+}
+
+.introductionSobre {
+  background: linear-gradient(90deg, #5a0fc8, #8b3fd1);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.princinpioSobre {
+  text-align: center;
+  margin-top: 40px;
+}
+.sobreImagem {
+  width: 30px; /* tamanho pequeno tipo ícone */
+  height: 30px; /* deixa quadrada */
+  object-fit: cover; /* corta bonitinho */
+  border-radius: 50%; /* deixa redondinha como ícone */
+  margin: 0 auto 15px auto;
+  display: block;
+}
