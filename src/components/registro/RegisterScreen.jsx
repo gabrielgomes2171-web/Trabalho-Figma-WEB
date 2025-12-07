@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { authService } from '../../services/api'; 
+import { authservice } from '../../services/api'; 
 import styles from "./styles.module.css";
 
 function RegisterScreen({ onSwitchToLogin }) {
