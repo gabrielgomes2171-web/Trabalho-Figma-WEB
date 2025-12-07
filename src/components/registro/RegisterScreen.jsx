@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import React, { useState } from 'react';
 import { authService } from '../../services/api'; 
@@ -42,19 +41,7 @@ function RegisterScreen({ onSwitchToLogin }) {
   return (
     <div className={styles.fullScreenCenter}>
       <div className={styles.cardPrincipal}>
-=======
-import React from 'react';
-import styles from "./styles.module.css";
-
-function RegisterScreen({ onSwitchToLogin }) {
-  return (
-    // <--- 1. MOLDURA MÁGICA DE CENTRALIZAÇÃO AQUI (Linha 5)
-    <div className={styles.fullScreenCenter}>
-      
-      {/* 2. O CARD PRINCIPAL FICA DENTRO DA MOLDURA MÁGICA */}
-      <div className={styles.cardPrincipal}>
         
->>>>>>> 261806ea7bca947670baa577c8bdfe42a77fc104
         <header className={styles.cardHeader}>
           <div className={styles.logoContainer}>
             <span className={styles.logoC}>C</span>
@@ -62,9 +49,8 @@ function RegisterScreen({ onSwitchToLogin }) {
           </div>
           <h2 className={styles.titleRegister}>Cadastre-se</h2>
         </header>
-<<<<<<< HEAD
 
-        {/* 3. Formulário com onSubmit */}
+        {/* 3. Formulário com onSubmit e Hooks configurados */}
         <form className={styles.formContent} onSubmit={handleRegister}>
           <input 
             type="text" 
@@ -107,30 +93,9 @@ function RegisterScreen({ onSwitchToLogin }) {
         <button onClick={onSwitchToLogin} className={styles.linkJaRegistrado}>
           Já é registrado? Entrar
         </button>
+        
       </div>
     </div>
-=======
-        
-        <form className={styles.formContent}>
-          <input type="text" placeholder="Nome Completo" className={styles.inputPadrao} />
-          <input type="email" placeholder="E-mail" className={styles.inputPadrao} />
-          <input type="password" placeholder="Senha" className={styles.inputPadrao} />
-          <input type="password" placeholder="Confirmar Senha" className={styles.inputPadrao} />
-          
-          <button type="submit" className={styles.botaoEntrar} style={{marginTop: '10px'}}>
-            Cadastrar
-          </button>
-        </form>
-        
-        <button onClick={onSwitchToLogin} className={styles.linkJaRegistrado}>
-          Já é registrado? Entrar
-        </button>
-        
-      </div> 
-      
-    </div>
-    // <--- 3. FECHAMENTO DA MOLDURA MÁGICA AQUI (Linha 26)
->>>>>>> 261806ea7bca947670baa577c8bdfe42a77fc104
   );
 }
 
