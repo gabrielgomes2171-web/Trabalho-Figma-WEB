@@ -1,0 +1,39 @@
+.contato-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.subtitulo {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f5f8ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #444;
+}
+
+.icone {
+  font-size: 28px;
+  margin-bottom: 8px;
+}

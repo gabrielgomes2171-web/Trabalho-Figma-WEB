@@ -11,3 +11,36 @@
 
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+.pageNumber {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.prevNextButton {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pageWrapper {
+    max-width: 1200px; 
+    width: 100%;       
+    margin-left: auto;  
+    margin-right: auto; 
+    padding: 0 30px; 
+}

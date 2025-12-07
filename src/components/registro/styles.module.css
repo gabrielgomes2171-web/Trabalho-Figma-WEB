@@ -1,36 +1,28 @@
-/* ========================================= */
-/* 1. MOLDURA MÁGICA: CENTRALIZAÇÃO E FUNDO  */
-/* ========================================= */
-/* CLASSE NOVA: Chama a centralização no JSX e define o fundo escuro. */
 .fullScreenCenter {
     min-height: 100vh;
-    background-color: #1A1C30; /* Fundo Roxo-Marinho Escuro */
+    background-color: #1A1C30; 
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
+    justify-content: center; 
+    align-items: center;     
 }
 
-/* ========================================= */
-/* 2. CARD PRINCIPAL (LOGIN/CADASTRO)        */
-/* ========================================= */
-.card-principal {
+.cardPrincipal {
     width: 300px;
     padding: 20px;
-    background-color: #3A2A6E; /* Cor roxa clara */
+    background-color: #3A2A6E; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    /* CORREÇÃO CRÍTICA: Remove a margem fixa para usar a centralização do fullScreenCenter */
     margin: 0; 
 }
-.logo-container {
+.logoContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     color: white;
 }
-.logo-c {
+.logoC {
     font-size: 24px;
     font-weight: bold;
     background-color: #5B4887;
@@ -38,40 +30,32 @@
     border-radius: 5px;
     margin-right: 5px;
 }
-.nome-hub {
+.nomeHub {
     font-size: 16px;
     font-weight: 500;
 }
 
-/* ========================================= */
-/* 3. ORGANIZAÇÃO DOS CAMPOS (FORMULÁRIO)    */
-/* ========================================= */
-/* CLASSE NOVA: Força todos os inputs e botões (do Login e Cadastro) a ficarem em coluna */
-.form-content {
+.formContent {
     display: flex;
-    flex-direction: column; /* Coloca os itens em coluna */
-    gap: 15px; /* Espaço entre os campos */
+    flex-direction: column; 
+    gap: 15px; 
 }
 
-/* ========================================= */
-/* 4. ESTILOS DOS INPUTS E BOTÕES            */
-/* ========================================= */
-.input-padrao {
+
+.inputPadrao {
     width: 100%;
-    padding: 10px;
-    /* CORREÇÃO: Fundo branco e texto preto para aparecerem na caixa roxa */
+    padding: 10px;    
     background-color: white; 
     color: black; 
-    /* Remove a margem do input, agora controlada pelo gap do form-content */
     margin-bottom: 0; 
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
 }
-.botao-entrar {
+.botaoEntrar {
     width: 100%;
     padding: 10px;
-    /* CORREÇÃO: Cor Laranja correta do Figma (substitui #FF5722) */
+    
     background-color: #FF6B00; 
     color: white;
     font-weight: bold;
@@ -88,8 +72,8 @@
     font-size: 14px;
     cursor: pointer;
 }
-.link-ja-registrado {
-    /* CORREÇÃO: Cor Laranja correta do Figma (substitui #FF5722) */
+.linkJaRegistrado {
+    
     color: #FF6B00; 
     font-weight: bold;
     display: block;

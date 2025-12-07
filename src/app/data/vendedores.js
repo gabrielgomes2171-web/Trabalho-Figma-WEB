@@ -1,6 +1,7 @@
 export const vendedoresData = [
   {
     id: 1,
+    slug: 'confeccoes-silva',
     nome: "Confecções Silva",
     local: "Centro, Caruaru - PE",
     nota: 4.8,
@@ -16,6 +17,7 @@ export const vendedoresData = [
     premium: true,
   },  {
     id: 2,
+    slug: 'malhas-caruaru',
     nome: "Malhas Caruaru",
     local: "Distrito Industrial, Caruaru - PE",
     nota: 4.9,
@@ -31,6 +33,7 @@ export const vendedoresData = [
     premium: true,
   },{
     id: 3,
+    slug: 'kids-fachion',
     nome: "Kids Fashion",
     local: "Vila kennedy, Caruaru - PE",
     nota: 4.7,
@@ -46,6 +49,7 @@ export const vendedoresData = [
     premium: true,
   },{
     id: 4,
+    slug: 'moda-nordeste',
     nome: "Moda Nordeste",
     local: "Alto do Moura, Caruaru - PE",
     nota: 4.6,
@@ -61,6 +65,7 @@ export const vendedoresData = [
     premium: true,
   },{
     id: 5,
+    slug: 'denim-brasil',
     nome: "Denim Brasil",
     local: "São Francisco, Caruaru - PE",
     nota: 4.6,
@@ -76,6 +81,7 @@ export const vendedoresData = [
     premium: true,
   },{
     id: 6,
+    slug: 'polo-caruaru',
     nome: "Polo Caruaru",
     local: "Rendeira, Caruaru - PE",
     nota: 4.6,

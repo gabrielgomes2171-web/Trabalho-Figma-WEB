@@ -28,7 +28,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .heroSection {
@@ -71,8 +71,12 @@
   }
 }
 
-.highlightOrange { color: var(--accent-orange); }
-.highlightYellow { color: var(--accent-yellow); }
+.highlightOrange {
+  color: var(--accent-orange);
+}
+.highlightYellow {
+  color: var(--accent-yellow);
+}
 
 .heroDesc {
   font-size: 1.1rem;
@@ -109,14 +113,18 @@
   cursor: pointer;
 }
 
-.btnPrimary:hover { transform: translateY(-2px); }
-.btnOutline:hover { background: rgba(255,255,255,0.1); }
+.btnPrimary:hover {
+  transform: translateY(-2px);
+}
+.btnOutline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 .heroStats {
   display: flex;
   gap: 40px;
   margin-top: 40px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 20px;
 }
 
@@ -179,10 +187,22 @@
   flex-shrink: 0;
 }
 
-.green { background: #dcfce7; color: #16a34a; }
-.blue { background: #dbeafe; color: #2563eb; }
-.purple { background: #f3e8ff; color: #9333ea; }
-.yellow { background: #fef9c3; color: #ca8a04; }
+.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.purple {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+.yellow {
+  background: #fef9c3;
+  color: #ca8a04;
+}
 
 .benefitText strong {
   display: block;
@@ -229,7 +249,7 @@
 .catOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .catInfo {
@@ -370,7 +390,9 @@
   transition: background 0.2s;
 }
 
-.btnView:hover { background: #1d4ed8; }
+.btnView:hover {
+  background: #1d4ed8;
+}
 
 .productsFooter {
   text-align: center;
@@ -456,4 +478,16 @@
   border-radius: var(--radius-md);
   font-weight: 700;
   cursor: pointer;
+}
+
+styles.sobre {
+  display: flex;
+  gap: 20px;
+}
+
+.introductionSobre {
+  background: linear-gradient(90deg, #5a0fc8, #8b3fd1);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
 }

@@ -39,10 +39,9 @@ const HeaderMain = () => {
             </div>
 
             <div className={styles['Buttons-direita']}>
-                <Button>
-                    <Image src="/images/shopping-cart.svg" alt="carrinho de compras" width={25} height={25}/>
-                    <span className={styles.cartCount}>0</span>
-                </Button>
+                <Link href="/registro">
+                <Button className={styles.enterButton}>Cadastrar</Button>
+                </Link>
                 <Link href="/login">
                 <Button className={styles.enterButton}>Entrar</Button>
                 </Link>
@@ -57,13 +56,10 @@ const HeaderNav = () =>{
     return(
         <div className={styles["header-main-nav"]}>
             {navItems.map((item) => {
-                // 1. Verifica se o caminho atual começa com o href do item
-                // Usamos startsWith para que páginas aninhadas (ex: /produtos/camisetas) destaquem "Produtos"
+                
                 const isActive = item.href === '/' 
-                    ? pathname === item.href // Caso especial: 'Início' só é ativo na raiz
-                    : pathname.startsWith(item.href);
-
-                // 2. Monta a string de classes (navButton sempre, active se for a página atual)
+                    ? pathname === item.href 
+                    : pathname.startsWith(item.href);                
                 const buttonClasses = `${styles.navButton} ${isActive ? styles.active : ''}`;
                 
                 return (

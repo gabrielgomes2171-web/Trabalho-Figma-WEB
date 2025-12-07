@@ -1,0 +1,82 @@
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos */
+    
+    /* Estilos do card branco flutuante */
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 30px;
+    max-width: 90%; /* Limita a largura se necessário, ou remova se o pai já limitar */
+}
+
+/* 2. CAMPO DE BUSCA (INPUT): Ocupa o espaço restante */
+.searchInput {
+    flex: 1; /* <-- ESSENCIAL: Faz o input e seu container ocuparem todo o espaço restante */
+    display: flex; /* Para alinhar a lupa se ela for adicionada */
+}
+
+.searchInput input {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    outline: none;
+}
+
+.filterControls {
+    display: flex; 
+    align-items: center;
+    gap: 15px; 
+    flex-shrink: 0; 
+}
+
+
+.filtroDropdown {
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    outline: none;
+    flex-shrink: 0; 
+    width: 120px; 
+}
+
+.vendorQuantidade {
+    margin: 0; 
+    font-size: 0.95rem;
+    color: #777;
+    flex-shrink: 0; 
+    white-space: nowrap; 
+}
+
+
+.viewToggles {
+    display: flex;
+    gap: 0px; 
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+.toggleButton {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+
+.activeView {
+    background-color: #e0e0e0; 
+}
