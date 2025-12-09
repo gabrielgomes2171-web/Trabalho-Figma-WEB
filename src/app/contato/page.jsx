@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
+import Footer from "src/components/footer/Footer"; 
 
 export default function Footer() {
     return (
@@ -83,8 +84,7 @@ export default function Footer() {
 }
 
 import "./contato.css";
-
-export default function ContatoPage() {
+export default function ContatoPage(){
 }
 return (
     <div className="contato-container">
@@ -92,29 +92,26 @@ return (
         <p className="subtitulo">
             Estamos aqui para ajudar! Entre em contato conosco e descubra como podemos impulsionar seu negócio têxtil.
         </p>
-
+        
         <div className="cards">
             <div className="card">
                 <div classeName="icone"></div>
                 <h3>Telefone</h3>
                 <p>(87) 3000-0000</p>
             </div>
+            </div>
 
             <div className="card">
                 <div className="icone"></div>
                 <h3> Endereço</h3>
                 <p>Centro de Caruaru, PE<br />Polo têxtil do Nordeste</p>
-                <div />
+                </div>
 
                 <div className="card">
                     <div className="icone"></div>
                     <h3>Horário de funcionamento</h3>
-                    <p>
-                        Segunda a Sexta: 8h às 18h <br />
+                    <p>Segunda a Sexta: 8h às 18h
                     </p>
                 </div>
-                ();
-
-
-            </></></>);
-
+                
+                </div>)
