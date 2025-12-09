@@ -1,10 +1,8 @@
 import Button from "src/components/Button";
 import Header from "src/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import Link from "next/link";
 import styles from "./produtos.module.css";
-<<<<<<< HEAD
-import Footer from "src/components/footer/Footer";
-=======
->>>>>>> 156be887a95d3d6506c6523a7e4115b20d673beb
 
 function ProductCard({ id, title, price, oldPrice, imageUrl, discount }) {
     return (
@@ -26,7 +24,7 @@ function ProductCard({ id, title, price, oldPrice, imageUrl, discount }) {
                 </div>
 
                 {/* 👇 AQUI ESTÁ O LINK DO VER DETALHES */}
-                <Link href={`/produtos/${id}`}>
+                <Link href={'/produtos/${id}'} >
                     <Button className={styles['button']}>Ver Detalhes</Button>
                 </Link>
             </div>
